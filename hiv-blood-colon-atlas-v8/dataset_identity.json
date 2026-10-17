@@ -1,0 +1,169 @@
+{
+  "version": 2,
+  "id": "hiv-blood-colon-atlas-v8",
+  "name": "HIV blood + colon atlas v8 (preview, public)",
+  "description": "PREVIEW of the amfAR HIV blood and colon atlas, build blood_gut_v8 (scVI, batch key = library); integration is not final. PUBLIC, DE-IDENTIFIED derivative of 6 public deposits: no donor or specimen IDs, sex, age, CD4 or viral load; 'library' is a study-scoped code. Expression = log1p(CP10k) for the 3,000 HVGs + a standard immune marker panel. Graph = each cell's 10 strongest neighbours (display only). hiv_rna: 'HIV RNA detected' = >=1 HIV UMI against the deposit's own reference; 'not detected' includes latent cells (RNA, not provirus, is measured). Peterson cells were all cultured overnight; one arm also got PMA/ionomycin (see ex_vivo_treatment). PWOH = Frouard's 3 control donors and Wei 2023's donors without HIV. Wei 2023 cells without a per-cell HIV call are 'not evaluable'. Colon cells are Peterson's only (see compartment).",
+  "created_at": "2026-10-16T19:20:18Z",
+  "cellucid_data_version": "0.9.1",
+  "stats": {
+    "n_cells": 1263243,
+    "n_genes": 3021,
+    "n_obs_fields": 27,
+    "n_categorical_fields": 21,
+    "n_continuous_fields": 6,
+    "has_connectivity": true,
+    "n_edges": 7929987
+  },
+  "embeddings": {
+    "available_dimensions": [
+      2,
+      3
+    ],
+    "default_dimension": 3,
+    "files": {
+      "2d": "points_2d.bin.gz",
+      "3d": "points_3d.bin.gz"
+    }
+  },
+  "obs_fields": [
+    {
+      "key": "celltypist_conf",
+      "kind": "continuous"
+    },
+    {
+      "key": "doublet_score",
+      "kind": "continuous"
+    },
+    {
+      "key": "log10_total_umi",
+      "kind": "continuous"
+    },
+    {
+      "key": "pct_mt",
+      "kind": "continuous"
+    },
+    {
+      "key": "donor_mixing_entropy",
+      "kind": "continuous"
+    },
+    {
+      "key": "library_mixing_entropy",
+      "kind": "continuous"
+    },
+    {
+      "key": "dataset",
+      "kind": "category",
+      "n_categories": 6
+    },
+    {
+      "key": "library",
+      "kind": "category",
+      "n_categories": 153
+    },
+    {
+      "key": "cohort",
+      "kind": "category",
+      "n_categories": 9
+    },
+    {
+      "key": "chemistry",
+      "kind": "category",
+      "n_categories": 6
+    },
+    {
+      "key": "cell_scope",
+      "kind": "category",
+      "n_categories": 8
+    },
+    {
+      "key": "ex_vivo_treatment",
+      "kind": "category",
+      "n_categories": 3
+    },
+    {
+      "key": "primer_condition",
+      "kind": "category",
+      "n_categories": 2
+    },
+    {
+      "key": "study_state",
+      "kind": "category",
+      "n_categories": 3
+    },
+    {
+      "key": "infection_stage",
+      "kind": "category",
+      "n_categories": 5
+    },
+    {
+      "key": "timepoint",
+      "kind": "category",
+      "n_categories": 8
+    },
+    {
+      "key": "viremia_confirmed",
+      "kind": "category",
+      "n_categories": 4
+    },
+    {
+      "key": "compartment",
+      "kind": "category",
+      "n_categories": 2
+    },
+    {
+      "key": "hiv_rna",
+      "kind": "category",
+      "n_categories": 3
+    },
+    {
+      "key": "hiv_umi_bin",
+      "kind": "category",
+      "n_categories": 6
+    },
+    {
+      "key": "pwh_status",
+      "kind": "category",
+      "n_categories": 2
+    },
+    {
+      "key": "leiden",
+      "kind": "category",
+      "n_categories": 27
+    },
+    {
+      "key": "ann_level_1",
+      "kind": "category",
+      "n_categories": 7
+    },
+    {
+      "key": "ann_level_2",
+      "kind": "category",
+      "n_categories": 19
+    },
+    {
+      "key": "celltypist_label",
+      "kind": "category",
+      "n_categories": 98
+    },
+    {
+      "key": "qc_exclude_flag",
+      "kind": "category",
+      "n_categories": 2
+    },
+    {
+      "key": "doublet_flag",
+      "kind": "category",
+      "n_categories": 2
+    }
+  ],
+  "export_settings": {
+    "compression": 6,
+    "var_quantization": 8,
+    "obs_continuous_quantization": null,
+    "obs_categorical_dtype": "uint16"
+  },
+  "source": {
+    "name": "amfAR HIV Immune Atlas (Theis lab, HMGU)",
+    "citation": "Frouard et al., Nat Commun 2026 (HIV-seq); Geretz et al., Sci Transl Med 2023; Weymar et al., Cell Rep 2022; Peterson et al., J Clin Invest 2026 (blood and colon libraries); Wei et al. 2023; Zhang et al. 2023"
+  }
+}

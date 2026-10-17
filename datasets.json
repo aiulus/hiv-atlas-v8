@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "default": "hiv-blood-colon-atlas-v8",
+  "datasets": [
+    {
+      "id": "hiv-blood-colon-atlas-v8",
+      "path": "hiv-blood-colon-atlas-v8/",
+      "name": "HIV blood + colon atlas v8 (preview, public)",
+      "description": "PREVIEW of the amfAR HIV blood and colon atlas, build blood_gut_v8 (scVI, batch key = library); integration is not final. PUBLIC, DE-IDENTIFIED derivative of 6 public deposits: no donor or specimen IDs, sex, age, CD4 or viral load; 'library' is a study-scoped code. Expression = log1p(CP10k) for the 3,000 HVGs + a standard immune marker panel. Graph = each cell's 10 strongest neighbours (display only). hiv_rna: 'HIV RNA detected' = >=1 HIV UMI against the deposit's own reference; 'not detected' includes latent cells (RNA, not provirus, is measured). Peterson cells were all cultured overnight; one arm also got PMA/ionomycin (see ex_vivo_treatment). PWOH = Frouard's 3 control donors and Wei 2023's donors without HIV. Wei 2023 cells without a per-cell HIV call are 'not evaluable'. Colon cells are Peterson's only (see compartment).",
+      "n_cells": 1263243,
+      "n_genes": 3021
+    }
+  ]
+}
