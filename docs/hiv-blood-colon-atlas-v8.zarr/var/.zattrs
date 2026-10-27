@@ -1,0 +1,16 @@
+{
+  "encoding-type": "dataframe",
+  "encoding-version": "0.2.0",
+  "_index": "_index",
+  "column-order": [
+    "extra_hvgs",
+    "extra_hvgs-flavor=seurat_v3-n_top_genes=3000",
+    "feature_types",
+    "gene_ids",
+    "gene_symbols",
+    "genome",
+    "highly_variable",
+    "highly_variable-batch_key=library-flavor=seurat_v3-n_top_genes=3000-span=0.5",
+    "gene"
+  ]
+}
